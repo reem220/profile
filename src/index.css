@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes changeWord {
+  0% { opacity: 1; }
+  25% { opacity: 0; transform: translateY(-20px); }
+  50% { opacity: 1; }
+  75% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; }
+}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+
+.word {
+  display: flex;
+  display: inline-block;
+  animation: changeWord 3s infinite; 
+ 
+}
+.app{
+  height: 100vh;
+}
+
+body{
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+  .shadow-inner { box-shadow: inset 0 10px 10px 0 rgba(250, 250, 252, 0.06); }
+.img{
+  display: flex;
+
+background: url(../assest/img.jpg) no-repeat center center/cover;
+width: 30vw;
+height: 60vh;
+z-index: +1;
+}
+.reem{
+  height: 100vh;
+  width: 100wh;
+}
